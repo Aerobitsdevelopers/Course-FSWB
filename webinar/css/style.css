@@ -1,0 +1,101 @@
+.signin .container {
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 20px 30px;
+}
+
+.signin input {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #7F27FF;
+}
+
+.signin h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #9F70FD;
+}
+
+.signin p {
+    color: #818181;
+    font-size: 14px;
+}
+
+.signin button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #7F27FF;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+}
+
+.signin img {
+    height: 40px;
+    margin-top: 20px;
+}
+
+.signin label {
+    margin-top: 10px;
+    color: #7F27FF;
+}
+
+.signin form {
+    position: relative;
+}
+
+.signin form:focus-within .message-box {
+    animation: message-box 0.3s ease-in;
+    transform: translate(70%, -50%);
+}
+
+@keyframes message-box {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(70%, -50%);
+    }
+}
+
+.signin .message-box {
+    display: block;
+    background-color: #7F27FF;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    padding-left: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.signin .message-box h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.signin .message-box p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #F1F1F1;
+    text-align: center;
+    font-weight: 600;
+}
+
+.signin .message-box i {
+    font-size: 3rem;
+    display: block;
+    margin: auto;
+}
