@@ -9,6 +9,7 @@
     padding: 5px 10px;
     border-radius: 10px;
     border: 1px solid #7F27FF;
+    transition: 0.6s;
 }
 
 .signin h1 {
@@ -88,3 +89,22 @@
     display: block;
     margin: auto;
 }
+
+/* 
+.signin .message-box {
+    transition: 0.6s;
+}
+
+.signin input:hover,
+.signin input:focus-visible {
+    border-radius: 0px;
+    border: 1px solid #FFF;
+    border-bottom: 1px solid #7F27FF;
+    transition: 0.6s;
+    outline: none;
+}
+
+.signin input:focus-visible::placeholder {
+    color: #F1F1F1;
+    transition: 0.6;
+} */
