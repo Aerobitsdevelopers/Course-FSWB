@@ -51,4 +51,6 @@
     font-size: 12px;
 }
 
-.signin .message-box {}
+.signin .message-box {
+    /* transition: 0.6s; */
+}
