@@ -1,0 +1,84 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.signin .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    border: 1px solid #818181;
+    padding: 20px;
+    background-color: #FFF;
+}
+
+.signin form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.signin button {
+    width: 100%;
+}
+
+.signin img {
+    display: block;
+    margin: auto;
+    mix-blend-mode: difference;
+}
+
+.signin label {
+    display: block;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.signin label#invalid {
+    display: none;
+}
+
+.bg-purple {
+    background-color: #7F27FF69;
+}
+
+.bg-purple .container {
+    padding: 60px !important;
+}
+
+.bg-purple img {
+    height: 90px !important;
+}
+
+.bg-purple p {
+    width: 100%;
+    text-align: center;
+}
+
+h1 span {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    display: block;
+    line-height: 5rem;
+    background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

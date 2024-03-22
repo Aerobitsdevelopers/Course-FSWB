@@ -54,3 +54,31 @@
 .signin label#invalid {
     display: none;
 }
+
+.bg-purple {
+    background-color: #7F27FF69;
+}
+
+.bg-purple .container {
+    padding: 60px !important;
+}
+
+.bg-purple img {
+    height: 90px !important;
+}
+
+.bg-purple p {
+    width: 100%;
+    text-align: center;
+}
+
+h1 span {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    display: block;
+    line-height: 5rem;
+    background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

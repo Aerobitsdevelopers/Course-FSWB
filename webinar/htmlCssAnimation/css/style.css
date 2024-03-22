@@ -1,0 +1,152 @@
+.signin .container {
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 20px 30px;
+}
+
+.signin input {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #7F27FF;
+    transition: 0.6s;
+    min-width: 240px;
+}
+
+.signin h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #9F70FD;
+}
+
+.signin p {
+    color: #818181;
+    font-size: 14px;
+}
+
+.signin button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #7F27FF;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.signin button .smiley {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+    transform: translateY(38%);
+    transition: 0.6s;
+}
+
+.signin img {
+    height: 40px;
+    margin-top: 20px;
+}
+
+.signin label {
+    margin-top: 10px;
+    color: #7F27FF;
+}
+
+.signin form {
+    position: relative;
+}
+
+.signin form:focus-within .message-box {
+    transform: translate(70%, -50%);
+}
+
+.signin .message-box {
+    display: block;
+    background-color: #7F27FF;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    padding-left: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.signin .message-box h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.signin .message-box p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #F1F1F1;
+    text-align: center;
+    font-weight: 600;
+}
+
+.signin .message-box i {
+    font-size: 3rem;
+    display: block;
+    margin: auto;
+}
+
+.signin .warning {
+    background-color: #FF8911;
+    padding: 0px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFF;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+.signin label#invalid {
+    color: red;
+    max-width: 240px;
+    line-height: 18px;
+}
+
+/* -----------------Animations----------------- */
+
+.signin .message-box {
+    transition: 0.6s;
+}
+
+.signin input:hover,
+.signin input:focus-visible {
+    border-radius: 0px;
+    border: 1px solid #FFF;
+    border-bottom: 1px solid #7F27FF;
+    transition: 0.6s;
+    outline: none;
+}
+
+.signin input:focus-visible::placeholder {
+    color: #F1F1F1;
+    transition: 0.6;
+}
+
+.signin button:hover .smiley {
+    transform: translateY(-39%);
+    transition: 0.6s;
+}
