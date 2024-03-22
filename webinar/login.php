@@ -10,7 +10,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/framework.css">
-        <!-- <link rel="stylesheet" href="./css/style.css"> -->
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div class="signin">
@@ -22,7 +22,7 @@
                     <input type="text" placeholder="Username" name="username" autocomplete="off"/>
                     <label>password</label>
                     <input type="password" name="password" placeholder="Password"/>
-                    <button type="submit">Signin</button>
+                    <button type="submit">Signin <div class="smiley"><i class="fa-solid fa-arrow-right"></i> <i class="fa-regular fa-face-smile-beam"></i></div></button>
                     <div class="message-box">
                         <h2>Welcome</h2>
                         <i class="fa-solid fa-id-badge"></i>
