@@ -108,6 +108,24 @@
     margin: auto;
 }
 
+.signin .warning {
+    background-color: #FF8911;
+    padding: 0px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFF;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+.signin label#invalid {
+    color: red;
+    max-width: 240px;
+    line-height: 18px;
+}
+
 /* -----------------Animations----------------- */
 
 .signin .message-box {

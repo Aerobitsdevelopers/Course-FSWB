@@ -17,12 +17,14 @@
             <div class="container">
                 <h1>Signin</h1>
                 <p>Login to continue</p>
-                <form method="POST">
+                <form method="POST" action="./signin.php">
                     <label>username</label>
-                    <input type="text" placeholder="Username" name="username" autocomplete="off"/>
+                    <input type="text" placeholder="Username" name="username" autocomplete="off" onkeydown="validateUsername(this.value)"/>
+                    <label id="invalid"><i class="fa-solid fa-triangle-exclamation"></i> username may only contain alphanumeric characters or single hyphens.</label>
                     <label>password</label>
                     <input type="password" name="password" placeholder="Password"/>
                     <button type="submit">Signin <div class="smiley"><i class="fa-solid fa-arrow-right"></i> <i class="fa-regular fa-face-smile-beam"></i></div></button>
+                    <?php if(isset($_GET['status']) && $_GET['status'] == 'invalid-credentials'){echo '<p class="warning">Invalid Credentials !</p>';}?>
                     <div class="message-box">
                         <h2>Welcome</h2>
                         <i class="fa-solid fa-id-badge"></i>
@@ -33,6 +35,6 @@
                 <p>Gyaan Innovation Lab, IIIT Kottayam</p>
             </div>
         </div>
-        <script src="" async defer></script>
+        <script src="./js/login.js"></script>
     </body>
 </html>
